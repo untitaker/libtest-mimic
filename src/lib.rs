@@ -73,7 +73,13 @@
 #![forbid(unsafe_code)]
 
 use std::{
-    borrow::Cow, cell::RefCell, fmt, process::{self, ExitCode}, sync::{mpsc, Mutex, Once}, thread, time::Instant
+    borrow::Cow,
+    cell::RefCell,
+    fmt,
+    process::{self, ExitCode},
+    sync::{mpsc, Mutex, Once},
+    thread,
+    time::Instant,
 };
 
 mod args;
