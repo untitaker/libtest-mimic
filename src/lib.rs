@@ -615,7 +615,7 @@ pub fn log_additional_output(message: &str) {
         buf.push_str(message);
         if buf.len() > 20 * 1024 * 1024 {
             buf.clear();
-            buf.push_str("[truncated output]\n");
+            buf.push_str("\n[truncated output]");
         }
     });
 }
